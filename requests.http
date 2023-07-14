@@ -1,2 +1,30 @@
 
-GET https://teoo01p-psychic-train-rqqgg4779rg2wwr7-8080.preview.app.github.dev/
+@server= https://teoo01p-psychic-train-rqqgg4779rg2wwr7-8080.preview.app.github.dev
+
+
+###
+
+GET {{server}}
+
+###
+
+GET {{server}}/cursos
+
+###
+
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre":"Algoritmos","creditos":3}
+
+###
+
+GET {{server}}/cursos/1
+
+###
+PATCH {{server}}/cursos/1
+Content-Type: application/json
+{"nombre":"Algoritmos"}
+
+###
+
